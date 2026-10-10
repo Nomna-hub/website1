@@ -1,0 +1,874 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+width: 100%;
+overflow-x: hidden;
+font-family: Arial, sans-serif;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+width: 100%;
+height: 100px;
+background-color: rgb(2, 14, 80);
+
+display: flex;
+align-items: center;
+
+position: relative;
+z-index: 1000;
+}
+
+.top-bar img {
+width: 80px;
+height: 80px;
+margin-left: 20px;
+}
+
+.top-bar h1 {
+color: white;
+font-size: 30px;
+margin-left: 20px;
+}
+
+.top-bar h1 span {
+color: #BA68C8;
+}
+
+
+/* ================= NAV ================= */
+
+.top-bar ul {
+display: flex;
+margin-left: 250px;
+list-style: none;
+}
+
+.top-bar ul li {
+padding: 10px 15px;
+}
+
+.top-bar ul li a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+
+.top-bar ul li a:hover {
+color: #BA68C8;
+}
+
+
+/* ================= ICONS ================= */
+
+.conter-icon {
+color: white;
+display: flex;
+align-items: center;
+gap: 25px;
+margin-left: auto;
+margin-right: 30px;
+}
+
+.conter-icon i {
+color: white;
+font-size: 20px;
+cursor: pointer;
+}
+
+#mean {
+display: none;
+}
+
+#cross {
+display: none;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+width: 100%;
+height: 600px;
+background-image: url("image/img2.jpg");
+background-size: cover;
+background-position: center;
+position: relative;
+padding: 140px 0 0 100px;
+}
+
+.hero-section span {
+color: #BA68C8;
+font-size: 20px;
+}
+
+.hero-section h1 {
+color: white;
+font-size: 50px;
+margin-top: 10px;
+}
+
+.hero-section p {
+color: white;
+font-size: 20px;
+margin-top: 20px;
+}
+
+.hero-section button {
+width: 150px;
+height: 50px;
+background-color: #BA68C8;
+color: white;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+margin-top: 30px;
+}
+
+
+/* ================= CATEGORY ================= */
+
+.Sneaker-Card {
+width: 100%;
+min-height: 350px;
+background-color: white;
+display: flex;
+align-items: center;
+gap: 25px;
+padding: 80px 30px 40px;
+position: relative;
+}
+
+.Sneaker-Card > h1 {
+position: absolute;
+top: 25px;
+left: 50%;
+transform: translateX(-50%);
+color: black;
+font-size: 30px;
+white-space: nowrap;
+}
+
+
+/* Category cards */
+
+.porduct-one,
+.porduct-two,
+.porduct-three,
+.porduct-four,
+.porduct-five {
+width: 20%;
+height: 230px;
+background-color: white;
+border-radius: 20px;
+box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+transition: 0.5s;
+overflow: hidden;
+}
+
+.porduct-one:hover,
+.porduct-two:hover,
+.porduct-three:hover,
+.porduct-four:hover,
+.porduct-five:hover {
+transform: translateY(-10px);
+}
+
+.porduct-one img,
+.porduct-two img,
+.porduct-three img,
+.porduct-four img,
+.porduct-five img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+.porduct-one h2,
+.porduct-two h2,
+.porduct-three h2,
+.porduct-four h2,
+.porduct-five h2 {
+color: black;
+font-size: 20px;
+text-align: center;
+margin-top: 10px;
+}
+
+.porduct-one span,
+.porduct-two span,
+.porduct-three span,
+.porduct-four span,
+.porduct-five span {
+display: block;
+color: black;
+font-size: 15px;
+text-align: center;
+margin-top: 5px;
+}
+
+/* ================= FEATURED PRODUCTS ================= */
+
+.Add-card {
+width: 100%;
+background-color: white;
+display: flex;
+align-items: center;
+gap: 25px;
+padding: 80px 30px 50px;
+position: relative;
+}
+
+.Add-card > h2 {
+position: absolute;
+top: 25px;
+left: 50%;
+transform: translateX(-50%);
+color: black;
+font-size: 30px;
+white-space: nowrap;
+}
+
+
+.card-one,
+.card-two,
+.card-three,
+.card-four {
+width: 25%;
+min-height: 300px;
+background-color: white;
+border-radius: 20px;
+box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+transition: 0.5s;
+overflow: hidden;
+}
+
+.card-one:hover,
+.card-two:hover,
+.card-three:hover,
+.card-four:hover {
+transform: translateY(-10px);
+}
+
+.Add-card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+
+.Add-card h3 {
+color: black;
+font-size: 18px;
+text-align: center;
+margin-top: 10px;
+}
+
+.Add-card span {
+display: block;
+color: black;
+text-align: center;
+margin-top: 8px;
+}
+
+
+.Add-card button {
+display: block;
+margin: 10px auto;
+color: white;
+background-color: black;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+/* ================= SPORT ================= */
+
+.Sport {
+width: 100%;
+min-height: 120px;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 20px;
+}
+
+.Sport > div {
+color: white;
+text-align: center;
+}
+
+.Sport i {
+font-size: 30px;
+display: block;
+margin-bottom: 5px;
+}
+
+.Sport span {
+color: white;
+font-size: 18px;
+}
+
+.Sport p {
+color: white;
+font-size: 13px;
+margin-top: 5px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+width: 100%;
+min-height: 320px;
+background-color: rgb(2, 14, 80);
+color: white;
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 2fr;
+gap: 40px;
+padding: 40px 60px;
+}
+
+
+/* Footer logo */
+
+.footer-conter img {
+width: 80px;
+height: 80px;
+}
+
+.footer-conter h3 {
+font-size: 25px;
+margin-top: -20px;
+margin-left: 70px;
+}
+
+.footer-conter h3 span {
+color: #BA68C8;
+}
+
+.footer-conter p {
+margin-top: 15px;
+line-height: 1.6;
+}
+
+
+/* Social */
+
+.social-icons {
+display: flex;
+gap: 15px;
+margin-top: 30px;
+}
+
+.social-icons a {
+width: 38px;
+height: 38px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #BA68C8;
+border-radius: 50%;
+color: white;
+text-decoration: none;
+}
+
+.social-icons a:hover {
+background-color: white;
+color: rgb(2, 14, 80);
+}
+
+
+/* Footer links */
+
+.footer-box,
+.footer-two {
+display: flex;
+flex-direction: column;
+}
+
+.footer-box h3,
+.footer-two h3 {
+margin-bottom: 15px;
+}
+
+.footer-box a,
+.footer-two a {
+color: #ddd;
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+.footer-box a:hover,
+.footer-two a:hover {
+color: #BA68C8;
+}
+
+/* Newsletter */
+
+.footer-contant h4 {
+font-size: 20px;
+}
+
+.footer-contant p {
+margin-top: 10px;
+font-size: 14px;
+}
+
+.footer-contant input {
+width: 100%;
+padding: 12px;
+margin-top: 15px;
+border: none;
+border-radius: 5px;
+}
+
+.footer-contant button {
+margin-top: 10px;
+background-color: #BA68C8;
+}
+
+
+/* ================================================= */
+/* ================= MOBILE ========================= */
+/* ================================================= */
+
+@media screen and (max-width: 768px) {
+
+
+    /* TOP BAR */
+
+    .top-bar {
+
+        height: 75px;
+
+        padding: 0 15px;
+    }
+
+    .top-bar img {
+
+        width: 55px;
+        height: 55px;
+
+        margin-left: 0;
+    }
+
+    .top-bar h1 {
+
+        font-size: 23px;
+
+        margin-left: 10px;
+    }
+
+
+    /* ICONS */
+
+    .conter-icon {
+
+        gap: 15px;
+
+        margin-right: 0;
+    }
+
+    .conter-icon i {
+
+        font-size: 18px;
+    }
+
+
+    /* THREE LINE SHOW */
+
+    #mean {
+
+        display: block;
+
+        font-size: 25px;
+
+        cursor: pointer;
+    }
+
+
+    /* MOBILE MENU */
+
+    .top-bar ul {
+
+        position: fixed;
+
+        top: 0;
+        right: -280px;
+
+        width: 260px;
+        height: 100vh;
+
+        background-color: rgb(2, 14, 80);
+
+        display: flex;
+
+        flex-direction: column;
+
+        padding-top: 80px;
+
+        margin: 0;
+
+        transition: 0.4s;
+
+        z-index: 2000;
+    }
+
+
+    /* MENU OPEN */
+
+    .top-bar ul.active {
+
+        right: 0;
+    }
+
+
+    .top-bar ul li {
+
+        display: block;
+
+        padding: 18px 30px;
+
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+
+    .top-bar ul li a {
+
+        font-size: 18px;
+    }
+
+
+    /* X BUTTON */
+
+    #cross {
+
+        display: block;
+
+        position: absolute;
+
+        top: 25px;
+        right: 25px;
+
+        color: white;
+
+        font-size: 22px;
+
+        cursor: pointer;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+
+        height: 500px;
+
+        padding: 100px 25px 0;
+
+        background-position: center;
+    }
+
+    .hero-section span {
+
+        font-size: 16px;
+    }
+
+    .hero-section h1 {
+
+        font-size: 35px;
+
+        line-height: 1.2;
+    }
+
+    .hero-section p {
+
+        font-size: 16px;
+    }
+
+    .hero-section button {
+
+        margin-top: 25px;
+    }
+
+
+    /* CATEGORY */
+
+    .Sneaker-Card {
+
+        min-height: auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+
+        padding: 80px 15px 30px;
+    }
+
+
+    .Sneaker-Card > h1 {
+
+        font-size: 24px;
+
+        top: 30px;
+    }
+
+
+    .porduct-one,
+    .porduct-two,
+    .porduct-three,
+    .porduct-four,
+    .porduct-five {
+
+        width: 100%;
+
+        height: 210px;
+
+        margin: 0;
+    }
+
+
+    .porduct-one img,
+    .porduct-two img,
+    .porduct-three img,
+    .porduct-four img,
+    .porduct-five img {
+
+        height: 130px;
+    }
+
+
+    /* FEATURED */
+
+    .Add-card {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+
+        padding: 80px 15px 30px;
+    }
+
+
+    .Add-card > h2 {
+
+        font-size: 24px;
+
+        top: 30px;
+    }
+
+
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four {
+
+        width: 100%;
+
+        min-height: 280px;
+    }
+
+
+    .Add-card img {
+
+        height: 150px;
+    }
+
+
+    .Add-card h3 {
+
+        font-size: 16px;
+    }
+
+
+    /* SPORT */
+
+    .Sport {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 25px;
+
+        padding: 30px 15px;
+    }
+
+
+    .Sport > div {
+
+        text-align: center;
+    }
+
+
+    .Sport i {
+
+        margin: 0 auto 8px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 40px 25px;
+    }
+
+
+    .footer-conter h3 {
+
+        margin-left: 0;
+
+        margin-top: 5px;
+    }
+
+
+    .social-icons {
+
+        margin-top: 10px;
+    }
+
+
+    .footer-box,
+    .footer-two {
+
+        margin: 0;
+    }
+
+
+    .footer-contant {
+
+        margin: 0;
+    }
+
+
+    .footer-contant input {
+
+        width: 100%;
+    }
+
+}
+
+
+/* ================================================= */
+/* ================= SMALL MOBILE =================== */
+/* ================================================= */
+
+@media screen and (max-width: 480px) {
+
+
+    .top-bar {
+
+        height: 70px;
+    }
+
+
+    .top-bar img {
+
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .top-bar h1 {
+
+        font-size: 20px;
+    }
+
+
+    .conter-icon {
+
+        gap: 10px;
+    }
+
+
+    .conter-icon .bi-search,
+    .conter-icon .bi-person {
+
+        display: none;
+    }
+
+
+    .hero-section {
+
+        height: 450px;
+
+        padding: 100px 20px 0;
+    }
+
+
+    .hero-section h1 {
+
+        font-size: 30px;
+    }
+
+
+    .Sneaker-Card {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .Add-card {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .porduct-one,
+    .porduct-two,
+    .porduct-three,
+    .porduct-four,
+    .porduct-five {
+
+        height: 230px;
+    }
+
+
+    .porduct-one img,
+    .porduct-two img,
+    .porduct-three img,
+    .porduct-four img,
+    .porduct-five img {
+
+        height: 150px;
+    }
+
+
+    .Sport {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer {
+
+        padding: 35px 20px;
+    }
+
+}
+
+
+
