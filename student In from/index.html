@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            background-color: darkslategray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            width: 400px;
+            max-width: 100%;
+            padding: 24px;
+            background-color: aliceblue;
+            border: 1px solid #b8c5d1;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .text h1 {
+            margin-bottom: 20px;
+            color: blue;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form label,
+        .form legend {
+            color: #23395d;
+            font-weight: bold;
+        }
+
+        .form input:not([type="radio"]):not([type="checkbox"]),
+        .form select {
+            width: 100%;
+            padding: 9px;
+            background-color: #ffffff;
+            border: 1px solid #b8c5d1;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        .form fieldset {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            border: 0;
+        }
+
+        .form fieldset legend {
+            margin-bottom: 8px;
+        }
+
+        .form fieldset label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: normal;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .buttons button {
+            flex: 1;
+            padding: 10px;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-button {
+            background-color: #2563eb;
+        }
+
+        .reset-button {
+            background-color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="text">
+            <h1>Student Registration Form</h1>
+        </div>
+        <form class="form" action="#" method="post">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter a password" required>
+
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" id="date-of-birth" name="dateOfBirth" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interests</legend>
+                <label><input type="checkbox" name="interests" value="html"> HTML</label>
+                <label><input type="checkbox" name="interests" value="css"> CSS</label>
+                <label><input type="checkbox" name="interests" value="javascript"> JavaScript</label>
+            </fieldset>
+
+            <label for="course">Select a Course</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Choose a course</option>
+                <option value="web-development">Web Development</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="graphic-design">Graphic Design</option>
+            </select>
+
+            <div class="buttons">
+                <button class="submit-button" type="submit">Submit</button>
+                <button class="reset-button" type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
